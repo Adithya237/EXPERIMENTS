@@ -1,0 +1,238 @@
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ git config --global user.name "Adithya237"
+warning: user.name has multiple values
+error: cannot overwrite multiple values with a single value
+       Use a regexp, --add or --replace-all to change user.name.
+
+w
+$ git config --global user.email "adithyaps2307@gmail.com"
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Dell/.git/
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ echo "HEllo GIT">fir.txt
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ git add fir.txt
+warning: in the working copy of 'fir.txt', LF will be replaced by CRLF the next time Git touches it
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ git commit -m "Intila commit"
+[master b0ff07b] Intila commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fir.txt
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Documents/My Music/': Permission denied
+warning: could not open directory 'Documents/My Pictures/': Permission denied
+warning: could not open directory 'Documents/My Videos/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .android/
+        .bash_history
+        .cache/
+        .eclipse/
+        .gitconfig
+        .lesshst
+        .nbi/
+        .node_repl_history
+        .p2/
+        .python_history
+        .viminfo
+        .vscode/
+        23/f6.txt
+        24/allexperiments/
+        3D Objects/
+        Adobe Reader XI.lnk
+        AppData/
+        Contacts/
+        Downloads/
+        Favorites/
+        HTML Tutorial
+        IIOTTTT/
+        IdeaProjects/
+        IntelGraphicsProfiles/
+        JANGOPROJECT/
+        Links/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{8cffd1ee-4ee7-11ee-971c-d2dfe0ae3bfd}.TM.blf
+        NTUSER.DAT{8cffd1ee-4ee7-11ee-971c-d2dfe0ae3bfd}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{8cffd1ee-4ee7-11ee-971c-d2dfe0ae3bfd}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        Saved Games/
+        Searches/
+        Videos/
+        allexperiments/
+        app.txt
+        clc
+        eclipse-workspace/
+        eclipse/
+        exp6/
+        f10.txt
+        fil.txt
+        git4/Exp7/
+        git4/exp6/
+        git4/iot1/
+        gitproject/
+        index.css
+        index.html
+        myproject/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        second/program1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ git log --oneline
+b0ff07b (HEAD -> master) Intila commit
+5bd3f92 f.txt is addded
+82493e5 (test) A
+5c4c558 intila commit
+f438ee6 hi
+0882125 (origin/master, origin/feature-login2, origin/HEAD, feature-login2) kuru.txt added
+8e0b923 f9.txt added
+7d5b1d9 committeddd
+7ffa695 committeddd
+2f7d436 comitted
+e025af9 (origin/feature/add-login-form, origin/dev, dev) hi
+d78ad68 added
+658cd14 (origin/feature-login1, feature-login1) committed
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ git clone https://github.com/Adithya237/allexperiments.git
+fatal: destination path 'allexperiments' already exists and is not an empty directory.
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ git clone https://github.com/Adithya237/exp2.git
+Cloning into 'exp2'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 12 (delta 1), reused 11 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (12/12), done.
+Resolving deltas: 100% (1/1), done.
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ mkdir epx2
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ mkdir exp2
+mkdir: cannot create directory ‘exp2’: File exists
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~ (master)
+$ cd exp2
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (master)
+$ touch newfile.txt
+Merge branch 'main' of https://github.com/Adithya237/exp2  Please enter a commit message to ex
+
+
+
+From https://github.com/Adithya237/exp2
+ * branch            main       -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ bcd1/python/f3.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bcd1/python/f3.txt
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (master)
+$ git fetch origin
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (master)
+$ git merge origin/main
+Already up to date.
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (master)
+$ git branch new-feature
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (master)
+$ git checkout new-feature
+Switched to branch 'new-feature'
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (new-feature)
+$ git switch main
+branch 'main' set up to track 'origin/main'.
+Switched to a new branch 'main'
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (main)
+$ git merge new-feature
+Updating 46d029e..a0036e2
+Fast-forward
+ newfile.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 newfile.txt
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (main)
+$ git checkout new-feature
+Switched to branch 'new-feature'
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (new-feature)
+$ git rebase main
+Current branch new-feature is up to date.
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (new-feature)
+$ git stash
+No local changes to save
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (new-feature)
+$ git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (main)
+pick 37167da Addded new file
+
+
+
+
+Revert "Addded new file"
+
+
+
+[feature-login b12b09e] Revert "Addded new file"
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 newfile.txt
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (feature-login)
+$ git log --oneline -n 5
+b12b09e (HEAD -> feature-login) Revert "Addded new file"
+37167da (origin/master, origin/HEAD) Addded new file
+ef84ad9 committed
+537ed01 committed
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (feature-login)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Dell@DESKTOP-B5N3OIN MINGW64 ~/exp2 (main)
+$ git cherry-pick b12b09e
+[main 6932d7c] Revert "Addded new file"
+ Date: Thu May 29 11:02:02 2025 +0530
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 newfile.txt
+
+
